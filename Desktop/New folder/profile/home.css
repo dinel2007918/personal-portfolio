@@ -1,0 +1,23 @@
+body{
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #111827,
+        #020617
+    );
+    color: #e5e7eb;
+}
+.navBar{
+    display: flex;
+    justify-content: right;
+
+}
+.navBar button{
+    border: none;
+    justify-content: flex-end;
+    background-color: #0f172a;
+    color: white    ;
+    font-size: medium;
+    padding-top: 0;
+
+}
