@@ -7,17 +7,25 @@ body{
     );
     color: #e5e7eb;
 }
-.navBar{
+.navBar1{
     display: flex;
-    justify-content: right;
-
-}
-.navBar button{
-    border: none;
     justify-content: flex-end;
+}
+.navBar1 button{
+    border: none;
     background-color: #0f172a;
     color: white    ;
     font-size: medium;
-    padding-top: 0;
+    padding-top: 100;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+
+.vinuda{
+    display: flex;
+    margin-right: 350px;
+    
 
 }
