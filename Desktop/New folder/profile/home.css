@@ -1,31 +1,79 @@
-body{
-    background: linear-gradient(
-        135deg,
-        #0f172a,
-        #111827,
-        #020617
-    );
-    color: #e5e7eb;
-}
-.navBar1{
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #0d1117, #161b22); /* dark gradient */
+    color: #e6e6e6;
+  }
+
+  /* Header Navigation */
+  header {
     display: flex;
-    justify-content: flex-end;
-}
-.navBar1 button{
-    border: none;
-    background-color: #0f172a;
-    color: white    ;
-    font-size: medium;
-    padding-top: 100;
-    font-family: 'Times New Roman', Times, serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+  }
 
+  header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
 
-}
+  nav a {
+    color: #e6e6e6;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
 
+  nav a:hover {
+    color: #58a6ff;
+  }
 
-.vinuda{
+  /* Hero Section */
+  .hero {
     display: flex;
-    margin-right: 350px;
-    
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    padding: 0 4rem;
+  }
 
-}
+  .hero h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: #cdd9e5;
+    line-height: 1.6;
+    max-width: 600px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    .hero {
+      padding: 0 2rem;
+    }
+
+    .hero h2 {
+      font-size: 1.6rem;
+    }
+  }
