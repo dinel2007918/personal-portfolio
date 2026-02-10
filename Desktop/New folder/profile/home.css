@@ -143,3 +143,49 @@
   font-size: 0.95rem;
   line-height: 1.5;
 }
+a{
+  color: none;
+  text-decoration: none;
+}
+.contact {
+  padding: 0 4rem 4rem;
+  text-align: center;
+}
+
+.contact p {
+  margin-bottom: 2rem;
+  color: #cdd9e5;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1f2933;
+  color: white;
+}
+
+.contact button {
+  padding: 12px;
+  background: #58a6ff;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #1f6feb;
+  color: white;
+}
