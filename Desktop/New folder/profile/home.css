@@ -12,6 +12,9 @@
 
   /* Header Navigation */
   header {
+    position: sticky;
+    top: 0;
+    background-color: #0d1117;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,4 +114,32 @@
 .cards:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(88,166,255,0.3);
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 4rem 4rem;
+}
+
+.project-card {
+  background: #161b22;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card h3 {
+  color: #58a6ff;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: #cdd9e5;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
